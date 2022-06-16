@@ -26,19 +26,19 @@ function WeatherData() {
               <p>{weat.main.temp}</p>
             </div>
 
-            <div className="box">
+            <div className="box2">
               <p className="bold">Hissedilen Sıcaklık (°C)</p>
               <p>{weat.main.feels_like}</p>
             </div>
 
-            <div className="box">
+            <div className="box2">
               <p className="bold">Min.|Max. Sıcaklık (°C)</p>
               <p>
                 {weat.main.temp_min} | {weat.main.temp_max}
               </p>
             </div>
 
-            <div className="box">
+            <div className="box2">
               <p className="bold">Basınç (hPa)</p>
               <p>{weat.main.pressure}</p>
             </div>
@@ -64,14 +64,14 @@ function WeatherData() {
               <p className="arrow" style={{transform: `rotate(${weat.wind.deg - 2*(weat.wind.deg)}deg)`}}>&#8594;</p>
             </div> */}
 
-            <div className="box">
+            <div className="box2">
             <p className="bold">Rüzgar Yönü</p>
               <img src="https://www.pngmagic.com/product_images/arrow-png-icon.png" className="arrow"
               alt="wind" 
               style={{transform: `rotate(${weat.wind.deg - 2*(weat.wind.deg)}deg)` , width:"50px"}}/>
             </div>
 
-            <div className="box">
+            <div className="box2">
             <p className="bold">Rüzgar Hızı (km/sa)</p>
               <p>{(weat.wind.speed*3.6).toFixed(1)}</p>
             </div>

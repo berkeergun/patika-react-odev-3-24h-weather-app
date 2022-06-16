@@ -16,6 +16,7 @@ html{
 }
 
 .input {
+  text-align: center;
   width: 25%;
   padding: 15px;
   margin: 15px;
@@ -25,7 +26,9 @@ html{
   font-size: 20px;
   border-radius: 10px;
   border: 1px solid black;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.4); */
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.4);
+
 }
 
 .btn{
@@ -38,6 +41,11 @@ html{
 }
 .box{
   width: 150px;
+  /* border: 1px solid black; */
+}
+.box2{
+  width: 150px;
+  /* border: 1px solid black; */
 }
 
 .weather{
@@ -89,4 +97,33 @@ html{
   background: linear-gradient(to right, #dbeaf5, #8af7e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+@media(max-width:768px){
+  .box2{
+    display: none;
+  }
+  .weather{
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .box1{
+    width: 100px;
+  }
+  .input{
+    width: 200px;
+  }
+}
+
+@media (max-width:375px) {
+  .weather{
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .App{
+    padding: 5px;
+  }
 }
