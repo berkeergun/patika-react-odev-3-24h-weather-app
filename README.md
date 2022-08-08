@@ -1,4 +1,4 @@
-# 24h Weather App
+# 24h Weather App [Live Server](https://24h-weather-app-berke.surge.sh/)
 ![react-weather](./src/react-weather.jpg)
 # Getting Started with Create React App
 
