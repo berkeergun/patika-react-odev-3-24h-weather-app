@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import WeatherContext from "../context/WeatherContext";
+import moment from "moment/min/moment-with-locales"
 
+// moment().format('LLL')
 function WeatherData() {
   const { weather, city, country } = useContext(WeatherContext);
 
@@ -18,7 +20,8 @@ function WeatherData() {
             <div className="box">
               <p className="bold">Tarih|Saat</p>
               {/* <p>{new Date(weat.dt*1000).toLocaleDateString()}-{new Date(weat.dt*1000).toLocaleTimeString()}</p> */}
-              <p className="italic">{weat.dt_txt}</p>
+              {/* <p className="italic">{weat.dt_txt}</p> */}
+              <p className="italic">{moment(weat.dt_txt).locale("tr").format('LLL')}</p>
             </div>
 
             <div className="box">

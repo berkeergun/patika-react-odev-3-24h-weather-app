@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import WeatherContext from '../context/WeatherContext'
 
 function WeatherSearch() {
-    const {getData}=useContext(WeatherContext)
+    const {getData} = useContext(WeatherContext)
   return (
     <div>
         <form onSubmit={getData}>

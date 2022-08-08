@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
 html{
   width: 100%;
   height: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* background: linear-gradient(to right,  #90f05d, rgb(67, 240, 154), #78ffd6); */
   /* background: linear-gradient(to right, #9af16a, #78ffd6); */
   background: linear-gradient(to right, #1a2a38, #79bac5);
   color: white;
+  /* font-family: 'Nunito Sans', sans-serif; */
+
 }
 .App {
   text-align: center;
@@ -25,20 +33,31 @@ html{
   -moz-box-sizing: border-box;
   font-size: 20px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 0px solid black;
   /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.4); */
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease-in-out;
+}
+
+.input:focus{
+  background-color: #b1f1fc;
+  outline: none;
 
 }
 
 .btn{
   border-radius: 5px;
-  border: 1px solid black;
+  border: 0px solid black;
   padding: 5px;
   font-size: 20px;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
   width: 75px;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease-in-out;
 }
+.btn:hover{
+  background-color: #b1f1fc;
+}
+
 .box{
   width: 150px;
   /* border: 1px solid black; */
@@ -97,6 +116,7 @@ html{
   background: linear-gradient(to right, #dbeaf5, #8af7e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 
 
