@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import WeatherContext from "../context/WeatherContext";
 import moment from "moment/min/moment-with-locales"
+import Arrow from "./arrow.png"
 
 // moment().format('LLL')
 function WeatherData() {
@@ -17,6 +18,7 @@ function WeatherData() {
       <div>
         {weather.map((weat, i) => (
           <div key={i} className="weather">
+            {console.log(weat?.wind)}
             <div className="box">
               <p className="bold">Tarih|Saat</p>
               {/* <p>{new Date(weat.dt*1000).toLocaleDateString()}-{new Date(weat.dt*1000).toLocaleTimeString()}</p> */}
@@ -69,9 +71,9 @@ function WeatherData() {
 
             <div className="box2">
             <p className="bold">Rüzgar Yönü</p>
-              <img src="https://www.pngmagic.com/product_images/arrow-png-icon.png" className="arrow"
-              alt="wind" 
-              style={{transform: `rotate(${weat.wind.deg - 2*(weat.wind.deg)}deg)` , width:"50px"}}/>
+              <img src={Arrow} className="arrow"alt="wind" 
+              // style={{transform: `rotate(${weat.wind.deg - 2*(weat.wind.deg)}deg)` , width:"50px"}}/>
+              style={{transform: `rotate(${weat.wind.deg +90 }deg)` , width:"100px"}}/>
             </div>
 
             <div className="box2">
